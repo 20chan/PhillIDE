@@ -1,1 +1,11 @@
 N:\C#\PhillIDE\PhillIDE\bin\Debug\PhillIDE.exe.config
+N:\C#\PhillIDE\PhillIDE\bin\Debug\PhillIDE.exe
+N:\C#\PhillIDE\PhillIDE\bin\Debug\PhillIDE.pdb
+N:\C#\PhillIDE\PhillIDE\bin\Debug\System.Net.Http.dll
+N:\C#\PhillIDE\PhillIDE\obj\Debug\PhillIDE.csprojResolveAssemblyReference.cache
+N:\C#\PhillIDE\PhillIDE\obj\Debug\PhillIDE.Main.resources
+N:\C#\PhillIDE\PhillIDE\obj\Debug\PhillIDE.Properties.Resources.resources
+N:\C#\PhillIDE\PhillIDE\obj\Debug\PhillIDE.csproj.GenerateResource.Cache
+N:\C#\PhillIDE\PhillIDE\obj\Debug\PhillIDE.exe
+N:\C#\PhillIDE\PhillIDE\obj\Debug\PhillIDE.pdb
+N:\C#\PhillIDE\PhillIDE\obj\Debug\PhillIDE.CodeEditor.resources
