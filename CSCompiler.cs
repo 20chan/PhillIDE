@@ -9,9 +9,8 @@ namespace PhillIDE
 {
     public class CSCompiler
     {
-        List<Code> Codes;
+        List<Code> Codes = new List<Code>();
         List<string> ReferencedAssemblies = new List<string>();
-        string OuterDirectory;
 
         bool hasError = false;
         string Errors;
@@ -25,7 +24,7 @@ namespace PhillIDE
             this.ReferencedAssemblies = assemblies;
         }
 
-        public bool Compile()
+        public bool Compile(string OuterDirectory)
         {
             CodeDomProvider codeDom = CodeDomProvider.CreateProvider("CSharp");
             CompilerParameters parameters = new CompilerParameters();
@@ -36,9 +35,11 @@ namespace PhillIDE
             parameters.GenerateExecutable = true;
             parameters.OutputAssembly = OuterDirectory;
 
-            string[] codes = new string[Codes.Count];
-            
-            CompilerResults results = codeDom.CompileAssemblyFromSource(parameters, codes);
+            List<string> codes = new List<string>();
+            foreach (Code c in Codes)
+                codes.Add(System.IO.File.ReadAllText(c.Directory));
+
+            CompilerResults results = codeDom.CompileAssemblyFromSource(parameters, codes.ToArray());
 
             if (results.Errors.HasErrors)
             {

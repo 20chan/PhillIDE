@@ -8,18 +8,24 @@ namespace PhillIDE
 {
     public class Code
     {
-        public string Directory { get; set; }
-        public string InnerCode { get; set; }
+        private string directory;
+        public string Directory { get { return directory; } }
+        private string innerCode;
 
         public Code(string directory)
         {
-            this.Directory = directory;
+            this.directory = directory;
             GetInnerCode();
         }
 
         public void GetInnerCode()
         {
-            this.InnerCode = System.IO.File.ReadAllText(Directory);
+            this.innerCode = System.IO.File.ReadAllText(directory);
+        }
+
+        public string FileName()
+        {
+            return System.IO.Path.GetFileName(directory);
         }
 
         public static string[] GetInnerCodes(List<Code> codes)
@@ -27,7 +33,7 @@ namespace PhillIDE
             string[] cs = new string[codes.Count];
             for(int i = 0; i < codes.Count; i++)
             {
-                cs[i] = codes[i].InnerCode;
+                cs[i] = codes[i].innerCode;
             }
 
             return cs;

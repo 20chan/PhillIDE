@@ -37,6 +37,7 @@
             this.tbCode.Location = new System.Drawing.Point(0, 0);
             this.tbCode.Multiline = true;
             this.tbCode.Name = "tbCode";
+            this.tbCode.ScrollBars = System.Windows.Forms.ScrollBars.Both;
             this.tbCode.Size = new System.Drawing.Size(607, 386);
             this.tbCode.TabIndex = 0;
             // 

@@ -9,3 +9,4 @@ N:\C#\PhillIDE\PhillIDE\obj\Debug\PhillIDE.csproj.GenerateResource.Cache
 N:\C#\PhillIDE\PhillIDE\obj\Debug\PhillIDE.exe
 N:\C#\PhillIDE\PhillIDE\obj\Debug\PhillIDE.pdb
 N:\C#\PhillIDE\PhillIDE\obj\Debug\PhillIDE.CodeEditor.resources
+N:\C#\PhillIDE\PhillIDE\obj\Debug\PhillIDE.Assemblies.resources
